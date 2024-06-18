@@ -1,6 +1,6 @@
 # Median Funktion
 
-## Anleitung
+## Inhalte
 1. Grundprinzip
 2. Technische Umsetzung
 
