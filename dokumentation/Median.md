@@ -1,10 +1,13 @@
 # Median Funktion
 
 ## Inhalte
+
 1. Grundprinzip
 2. Technische Umsetzung
+3. Programmablaufsplan
 
 ## Grundprinzip
+
 Um den Median einer Liste zu finden, müssen zwei Kriterien erfüllt sein:
 
 1. Die Liste muss sortiert sein.
@@ -22,13 +25,17 @@ Um die Eingabe der Werte zu beenden, muss eine `-1` eingegeben werden. Zusätzli
 
 Nachdem die Werte sortiert und übergeben wurden, wird die Länge der Liste abgelesen und neue Variable `median` definiert. Als nächstes wird überprüft, ob die Länge grade ist. Wenn ja, dann wir der Durchschnitt der beiden mittleren Werte berechnet:
 
-```
+```Python
 if(length % 2 == 0):
     median = (array[length//2 - 1] + array[length//2]) / 2
 ```
 
 Falls die Länge ungrade ist, wird sie durch 2 geteilt und der mittlere Wert wird zurüchgegeben:
 
-```
+```Python
 median = array[length//2]
 ```
+
+## Programmablaufplan
+
+![Median Programmablaufplan](https://github.com/antoniiAdamovych/python-projekt/blob/main/bilder/Median.png)
