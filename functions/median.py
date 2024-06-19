@@ -1,4 +1,5 @@
 def getMedian(array):
+    array = array.sort()
     # Die Funktion RequestAnArray() wird aufgerufen und das Array wird in der Variable array gespeichert
     length = len(array)
     median = 0

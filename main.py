@@ -68,8 +68,7 @@ def RequestAnArray():
         
         array.append(num)
         index += 1
-    
-    array.sort()
+
     return array
 
 if __name__=="__main__":
