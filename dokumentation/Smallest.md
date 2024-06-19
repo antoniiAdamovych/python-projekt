@@ -42,3 +42,7 @@ print("Smallest number in list:", getSmallestNumber(zahlen))
 ```
 Smallest number in list: 3
 ```
+
+**Programmablaufplan**
+
+![Kleinster Wert](https://github.com/antoniiAdamovych/python-projekt/blob/main/bilder/Small.png)
