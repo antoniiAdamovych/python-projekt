@@ -3,11 +3,12 @@ from functions.smallest import getSmallestNumber
 from functions.biggest import getBiggestNumber
 from functions.average import getListAverage
 from functions.sum import getNumbersSum
-from functions.sortList import getSortList
+from functions.sortList import quickSort
 
 class bcolors:
     OKGREEN = '\033[92m'
     ENDC = '\033[0m'
+    FAIL = '\033[91m'
 
 def main():
     print("")
@@ -16,7 +17,7 @@ def main():
 
     print("")
     
-    print("Bitte wählen Sie eine der folgenden Finktionen:")
+    print("Bitte wählen Sie eine der folgenden Funktionen:")
     
     print("")
     
@@ -31,7 +32,16 @@ def main():
     print("---------------------")
     print("")
     
-    auswahl = int(input("Geben Sie die Nummer der gewünschten Figur ein: "))
+    auswahl = 0
+    while True:
+        try:
+            auswahl = int(input("Geben Sie die Nummer der gewünschten Finktion ein (-1 für Beenden): "))
+            break
+        except:
+            print("")
+            print(bcolors.FAIL + 'Ungültige Eingabe' + bcolors.ENDC)
+            print("")
+            continue
     
     print("")
     print("---------------------")
@@ -40,22 +50,22 @@ def main():
     array = RequestAnArray()
     
     if auswahl == 1:
-        getSmallestNumber()
+        print("Kleinster Wert: " + str(getSmallestNumber(array)))
         pass
     elif auswahl == 2:
-        getBiggestNumber
+        print("Größter Wert: " + str(getBiggestNumber(array)))
         pass
     elif auswahl == 3:
-        getNumbersSum()
+        print("Summe aller Zahlen: " + str(getNumbersSum(array)))
         pass
     elif auswahl == 4:
-        getListAverage
+        print("Durchschnitt: " + str(getListAverage(array)))
         pass
     elif auswahl == 5:
-        quickSort(array, 0, len(array)-1)
+        print("Sortierte Liste: " + str(quickSort(array, 0, len(array)-1)))
         pass
     elif auswahl == 6:
-        getMedian(array)
+        print("Median: " + str(getMedian(array)))
         pass
     else:
         print("Ungültige Auswahl!")
@@ -64,9 +74,17 @@ def main():
 def RequestAnArray():
     array = []
     index = 1
-    print('Geben Sie die Zahlen ein (-1 für beenden):')
+    print('Geben Sie die Zahlen ein (-1 für Beenden):')
     while True:
-        num = int(input(str(index) + '. '))
+        num = 0
+        
+        try: 
+            num = int(input(str(index) + '. '))
+        except:
+            print("")
+            print(bcolors.FAIL + 'Ungültige Eingabe' + bcolors.ENDC)
+            print("")
+            continue
         
         if(num <= -1):
             break

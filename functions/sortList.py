@@ -18,7 +18,7 @@ def partition(array, von, bis):
             array[i] = array[j]
             array[j] = temp
             i += 1
-            j += 1
+            j -= 1
 
     # Nachdem die Zähler sich überholt haben, muss der Pivottausch stattfinden
     # Hier nutzt man den Zähler "i-1", um sicher zu gehen, dass die Elemente
@@ -39,9 +39,11 @@ def quickSort(array, von, bis):
         quickSort(array, von, positionPivot - 1)
         # Rekursion für den rechten Teil der Liste, also "Pivot + 1" bis "bis", plus weil Pivot bereits sortiert ist
         quickSort(array, positionPivot + 1, bis)
+        
+    return array
 
-if __name__=="__main__":
-    array = [1, 12, 18, 2, 8, 11, 12, 0, 10, 9, 22, 13, 3, 7, 4, 15, 16, 20]
-    print(array)
-    quickSort(array, 0, len(array)-1)
-    print(array)
+# if __name__=="__main__":
+#     array = [1, 12, 18, 2, 8, 11, 12, 0, 10, 9, 22, 13, 3, 7, 4, 15, 16, 20]
+#     print(array)
+#     quickSort(array, 0, len(array)-1)
+#     print(array)
