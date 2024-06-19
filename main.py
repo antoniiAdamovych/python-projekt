@@ -4,6 +4,7 @@ from functions.biggest import getBiggestNumber
 from functions.average import getListAverage
 from functions.sum import getNumbersSum
 from functions.sortList import getSortList
+
 class bcolors:
     OKGREEN = '\033[92m'
     ENDC = '\033[0m'
@@ -51,7 +52,7 @@ def main():
         getListAverage
         pass
     elif auswahl == 5:
-        getSortList()
+        quickSort(array, 0, len(array)-1)
         pass
     elif auswahl == 6:
         getMedian(array)
