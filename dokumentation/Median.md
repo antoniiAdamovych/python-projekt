@@ -3,6 +3,7 @@
 ## Inhalte
 1. Grundprinzip
 2. Technische Umsetzung
+3. Programmablaufsplan
 
 ## Grundprinzip
 Um den Median einer Liste zu finden, müssen zwei Kriterien erfüllt sein:
@@ -32,3 +33,7 @@ Falls die Länge ungrade ist, wird sie durch 2 geteilt und der mittlere Wert wir
 ```
 median = array[length//2]
 ```
+
+## Programmablaufplan
+
+![Median Programmablaufplan](https://github.com/antoniiAdamovych/python-projekt/blob/main/bilder/Median.png)
