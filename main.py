@@ -1,4 +1,5 @@
 from functions.median import getMedian
+from functions.sortList import quickSort
 
 class bcolors:
     OKGREEN = '\033[92m'
@@ -47,7 +48,7 @@ def main():
         #getListAverage
         pass
     elif auswahl == 5:
-        #getSortList()
+        quickSort(array, 0, len(array)-1)
         pass
     elif auswahl == 6:
         getMedian(array)
