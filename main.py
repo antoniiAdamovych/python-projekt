@@ -35,7 +35,7 @@ def main():
     auswahl = 0
     while True:
         try:
-            auswahl = int(input("Geben Sie die Nummer der gewünschten Finktion ein (-1 für Beenden): "))
+            auswahl = int(input("Geben Sie die Nummer der gewünschten Funktion ein (-1 für Beenden): "))
             break
         except:
             print("")
