@@ -1,9 +1,20 @@
 from functions.median import getMedian
 
+class bcolors:
+    OKGREEN = '\033[92m'
+    ENDC = '\033[0m'
+
 def main():
-    array = RequestAnArray()
+    print("")
     
-    print("Willkommen! Bitte wählen Sie eine Figur für die Flächenberechnung:")
+    print(bcolors.OKGREEN + "Willkommen in unserem Programm!" + bcolors.ENDC)
+
+    print("")
+    
+    print("Bitte wählen Sie eine der folgenden Finktionen:")
+    
+    print("")
+    
     print("1. Kleinster Wert")
     print("2. Größter Wert")
     print("3. Summe aller Zahlen")
@@ -11,7 +22,17 @@ def main():
     print("5. Liste Sortieren")
     print("6. Median ausgeben")
     
+    print("")
+    print("---------------------")
+    print("")
+    
     auswahl = int(input("Geben Sie die Nummer der gewünschten Figur ein: "))
+    
+    print("")
+    print("---------------------")
+    print("")
+    
+    array = RequestAnArray()
     
     if auswahl == 1:
         #getSmallestNumber()
