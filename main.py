@@ -1,5 +1,9 @@
 from functions.median import getMedian
-
+from functions.smallest import getSmallestNumber
+from functions.biggest import getBiggestNumber
+from functions.average import getListAverage
+from functions.sum import getNumbersSum
+from functions.sortList import getSortList
 class bcolors:
     OKGREEN = '\033[92m'
     ENDC = '\033[0m'
@@ -35,19 +39,19 @@ def main():
     array = RequestAnArray()
     
     if auswahl == 1:
-        #getSmallestNumber()
+        getSmallestNumber()
         pass
     elif auswahl == 2:
-        #getBiggestNumber
+        getBiggestNumber
         pass
     elif auswahl == 3:
-        #getNumbersSum()
+        getNumbersSum()
         pass
     elif auswahl == 4:
-        #getListAverage
+        getListAverage
         pass
     elif auswahl == 5:
-        #getSortList()
+        getSortList()
         pass
     elif auswahl == 6:
         getMedian(array)
