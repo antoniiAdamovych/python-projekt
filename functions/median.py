@@ -1,6 +1,5 @@
-def getMedian():
+def getMedian(array):
     # Die Funktion RequestAnArray() wird aufgerufen und das Array wird in der Variable array gespeichert
-    array = RequestAnArray()
     length = len(array)
     median = 0
     
@@ -13,24 +12,6 @@ def getMedian():
         
     print('Median:', median)
     return median
-
-    
-# Die Werte werden in einem Array gespeichert und sortiert
-def RequestAnArray():
-    array = []
-    index = 1
-    print('Geben Sie die Zahlen ein (-1 für beenden):')
-    while True:
-        num = int(input(str(index) + '. '))
-        
-        if(num <= -1):
-            break
-        
-        array.append(num)
-        index += 1
-    
-    array.sort()
-    return array
         
 
 if __name__=="__main__":

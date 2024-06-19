@@ -1,4 +1,8 @@
+from functions.median import getMedian
+
 def main():
+    array = RequestAnArray()
+    
     print("Willkommen! Bitte wählen Sie eine Figur für die Flächenberechnung:")
     print("1. Kleinster Wert")
     print("2. Größter Wert")
@@ -25,10 +29,27 @@ def main():
         #getSortList()
         pass
     elif auswahl == 6:
-        #getMedian()s
+        getMedian(array)
         pass
     else:
         print("Ungültige Auswahl!")
+        
+# Die Werte werden in einem Array gespeichert und sortiert
+def RequestAnArray():
+    array = []
+    index = 1
+    print('Geben Sie die Zahlen ein (-1 für beenden):')
+    while True:
+        num = int(input(str(index) + '. '))
+        
+        if(num <= -1):
+            break
+        
+        array.append(num)
+        index += 1
+    
+    array.sort()
+    return array
 
 if __name__=="__main__":
     main()
