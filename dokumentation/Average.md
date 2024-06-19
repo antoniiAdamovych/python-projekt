@@ -46,4 +46,4 @@ Number average of list: 18.18
 
 ## Programmablaufplan
 
-![Median Programmablaufplan](https://github.com/antoniiAdamovych/python-projekt/blob/main/bilder/Average.png)
+![Median Programmablaufplan](https://github.com/antoniiAdamovych/python-projekt/blob/main/bilder/Averange.png)
