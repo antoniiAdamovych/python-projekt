@@ -42,3 +42,7 @@ print("Sum of numbers in list:", getNumbersSum(zahlen))
 ```
 Sum of numbers in list: 206
 ```
+
+## Programmablaufplan
+
+![Median Programmablaufplan](https://github.com/antoniiAdamovych/python-projekt/blob/main/bilder/Sum.png)
